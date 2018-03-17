@@ -16,7 +16,7 @@ public class Main {
 
         /** AddProduct(Item) */
         fulfillmentCenter.addProduct(item);
-        fulfillmentCenter.addProduct(item2);
+        //fulfillmentCenter.addProduct(item2);
         fulfillmentCenter.addProduct(item3);
         //fulfillmentCenter.addProduct(item); // Add the same item
 
@@ -24,7 +24,7 @@ public class Main {
         //fulfillmentCenter.getProduct(item);
 
         /** removeProduct(Item) */
-        //fulfillmentCenter.removeProduct(item);
+        fulfillmentCenter.removeProduct(item2);
 
         /** search(String) */
         //System.out.println(fulfillmentCenter.search(""));
@@ -62,7 +62,7 @@ public class Main {
         //System.out.println(fulfillmentCenterContainer.findEmpty());
 
         /** summary() */
-        fulfillmentCenterContainer.summary();
+        //fulfillmentCenterContainer.summary();
 
     }
 }
