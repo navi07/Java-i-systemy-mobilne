@@ -8,7 +8,7 @@ public class FulfillmentCenter {
     private String repositoryName;
     private double maxRepositoryCapacity; // Wyrażona przez ilość
     private double currentRepositoryCapacity; // Wyrażona przez ilość
-    public List<Item> items = new LinkedList<Item>();
+    public List<Item> items = new LinkedList<>();
 
     public FulfillmentCenter() {
         this.repositoryName = "";
@@ -74,14 +74,9 @@ public class FulfillmentCenter {
         }
 
         public void removeProduct(Item item){
-            Iterator<Item> iterator = items.iterator();
-            while (items.contains(item)){
-                if(item == search(item.getName())){
-                    currentRepositoryCapacity -= item.getQuantity();
-                    items.remove(item);
-                }
+            items.remove(item);
             }
-        }
+
 
 
     public Item search(String name){

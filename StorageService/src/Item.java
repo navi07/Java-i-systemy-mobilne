@@ -5,18 +5,31 @@ public class Item implements Comparable<Item> {
     private double mass;
     private int quantity;
 
-    public Item() {
+    public Item(){
+
         this.name = "";
         this.itemCondition = itemCondition.NEW;
         this.mass = 0.0;
         this.quantity = 0;
     }
 
+
     public Item(String name, ItemCondition itemCondition, double mass, int quantity) {
-        this.name = name;
-        this.itemCondition = itemCondition;
-        this.mass = mass;
-        this.quantity = quantity;
+        try {
+            if(mass <=0 || quantity <=0) {
+                throw new NumberFormatException();
+            }
+            else{
+                    this.name = name;
+                    this.itemCondition = itemCondition;
+                    this.mass = mass;
+                    this.quantity = quantity;
+                }
+            }
+        catch(NumberFormatException e){
+            System.out.println("Enter the correct value !");
+        }
+
     }
 
     public void print(){
