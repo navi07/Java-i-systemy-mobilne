@@ -10,17 +10,21 @@ import java.util.List;
 public class Application extends JFrame {
 
     public JPanel panel;
-    private JList functionList;
+    private JList<Function> functionList;
     private JButton evalButton;
     private JTextField inputField;
     private JTextArea textArea;
     private JScrollPane scrollContainerPane;
 
+    DefaultListModel<Function> listModel = new DefaultListModel<>();
     List<String> cache =  new ArrayList();
     int amount = 0;
 
 
     public Application(){
+        functionList.setModel(listModel);
+        makeFunctions();
+
         JFrame frame = new JFrame("Scientific Calculator");
         frame.setContentPane(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -90,75 +94,64 @@ public class Application extends JFrame {
             }
         });
 
+
         functionList.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    switch (functionList.getSelectedIndex()) {
-                        case 0:
-                            inputField.setText("cos()");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length() - 1);
-                            break;
-                        case 1:
-                            inputField.setText("ctg()");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length() - 1);
-                            break;
-                        case 2:
-                            inputField.setText("sec()");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length() - 1);
-                            break;
-                        case 3:
-                            inputField.setText("log( ,)");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length() - 2);
-                            break;
-                        case 4:
-                            inputField.setText("mod( ,)");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length() - 2);
-                            break;
-                        case 5:
-                            inputField.setText("Euler( ,)");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length() - 2);
-                            break;
-                        case 6:
-                            inputField.setText("pi");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length());
-                            break;
-                        case 7:
-                            inputField.setText("[Ks]");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length());
-                            break;
-                        case 8:
-                            inputField.setText("[Ll]");
-                            inputField.requestFocus();
-                            inputField.setCaretPosition(inputField.getText().length());
-                            break;
-                        case 9:
-                            if (!cache.isEmpty()) {
-                                textArea.append(new Message().msg(cache.get(cache.size() - amount - 1)));
-                            } else {
-                                JOptionPane.showMessageDialog(null, "There aren't previous operations",
-                                        "No last result",
-                                        JOptionPane.INFORMATION_MESSAGE);
-                            }
-                            break;
+                    int position = functionList.getSelectedIndex();
+                    inputField.setText(listModel.getElementAt(position).getEquivalent());
+                    inputField.requestFocus();
+
+                    if(inputField.getText().contains("()")) {
+                        inputField.setCaretPosition(inputField.getText().length() - 1);
                     }
+                    else if (inputField.getText().contains(",")) {
+                        inputField.setCaretPosition(inputField.getText().length() - 2);
+                    }
+                    else if (inputField.getText().equals("")) {
+                        if (!cache.isEmpty()) {
+                            textArea.append(new Message().msg(cache.get(cache.size() - amount - 1)));
+                        } else {
+                            JOptionPane.showMessageDialog(null, "There aren't previous operations",
+                                    "No last result",
+                                    JOptionPane.INFORMATION_MESSAGE);
+                        }
+                    }
+                    else {
+                        inputField.setCaretPosition(inputField.getText().length());
+                    }
+
                 }
             }
         });
     }
 
+    public void makeFunctions(){
+        Function cos = new Function("Trigonometric cosine function", "cos()");
+        listModel.addElement(cos);
+        Function ctg = new Function("Trigonometric cotangent function", "ctg()");
+        listModel.addElement(ctg);
+        Function sec = new Function("Trigonometric secant function", "sec()");
+        listModel.addElement(sec);
+        Function log = new Function("Logarithm function", "log( ,)");
+        listModel.addElement(log);
+        Function mod = new Function("Modulo function", "mod( ,)");
+        listModel.addElement(mod);
+        Function binomial = new Function("Binomial coefficient function", "C( ,)");
+        listModel.addElement(binomial);
+        Function pi = new Function("PI number", "pi");
+        listModel.addElement(pi);
+        Function ks = new Function("Sierpinski's constant", "[Ks]");
+        listModel.addElement(ks);
+        Function ll = new Function("Laplace limit", "[Ll]");
+        listModel.addElement(ll);
+        Function lastResult = new Function("Last result", "");
+        listModel.addElement(lastResult);
+    }
 
     public static void main(String[] args) {
         new Application();
-
     }
 
 }

@@ -39,7 +39,7 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Evaluate !"/>
         </properties>
       </component>
       <component id="cf3c9" class="javax.swing.JList" binding="functionList">
@@ -49,18 +49,7 @@
           </grid>
         </constraints>
         <properties>
-          <model>
-            <item value="Trigonometric cosine function"/>
-            <item value="Trigonometric cotangent function"/>
-            <item value="Trigonometric secant function"/>
-            <item value="Logarithm function"/>
-            <item value="Modulo function"/>
-            <item value="Euler number"/>
-            <item value="PI number"/>
-            <item value="Sierpinski's constant"/>
-            <item value="Laplace limit"/>
-            <item value="last result"/>
-          </model>
+          <model/>
         </properties>
       </component>
     </children>

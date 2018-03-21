@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="comkurzeja" target="1.6" />
-      <module name="SciCalc" target="1.6" />
+      <module name="SciCalc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
