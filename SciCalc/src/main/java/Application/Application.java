@@ -111,7 +111,7 @@ public class Application extends JFrame {
                     }
                     else if (inputField.getText().equals("")) {
                         if (!cache.isEmpty()) {
-                            textArea.append(new Message().msg(cache.get(cache.size() - amount - 1)));
+                            inputField.setText(cache.get(cache.size() - amount - 1));
                         } else {
                             JOptionPane.showMessageDialog(null, "There aren't previous operations",
                                     "No last result",
