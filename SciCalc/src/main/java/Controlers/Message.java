@@ -25,4 +25,22 @@ public class Message extends MessageFormat{
         } catch(MyException a) {}
           return "";
         }
+
+    public String msg2(String formula){
+
+        Expression expression = new Expression(formula);
+        Double result = expression.calculate() ;
+
+        try {
+            if(Double.toString(result) == "NaN") {
+                throw new MyException();
+            }
+            else {
+                Object[] objects = {formula, result};
+                MessageFormat messageFormat = new MessageFormat("{1}");
+                return messageFormat.format(objects);
+            }
+        } catch(MyException a) {}
+        return "";
+    }
 }
