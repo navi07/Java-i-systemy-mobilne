@@ -10,12 +10,10 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.util.Callback;
-import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -209,5 +207,12 @@ public class GuiControler implements Initializable
         }
     }
 
+    public EditTaskPresenter getEditTaskPresenter() {
+        return editTaskPresenter;
+    }
+
+    public AddTaskPresenter getAddTaskPresenter() {
+        return addTaskPresenter;
+    }
 }
 

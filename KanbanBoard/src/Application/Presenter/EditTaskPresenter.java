@@ -34,6 +34,10 @@ public class EditTaskPresenter {
         this.doneID = doneID;
     }
 
+    public EditTaskPresenter() {
+
+    }
+
     public void show(Container element, int index) {
         this.element = element;
         this.index = index;
@@ -64,20 +68,35 @@ public class EditTaskPresenter {
         return index;
     }
 
-    public static void add(Container element, int index) {
+    public static int add(Container element, int index) {
         if (listChooser == 1) {
             toDO.remove(index);
             toDO.add(element);
+            return 1;
         } else if (listChooser == 2) {
             inProgress.remove(index);
             inProgress.add(element);
+            return 1;
         } else if (listChooser == 3) {
             done.remove(index);
             done.add(element);
+            return 1;
         }
+        else return 0;
     }
     public static void closeStage() {
         primaryStage.close();
     }
 
+    public static void setIndex(int index) {
+        EditTaskPresenter.index = index;
+    }
+
+    public static void setElement(Container element) {
+        EditTaskPresenter.element = element;
+    }
+
+    public static void setListChooser(int listChooser) {
+        EditTaskPresenter.listChooser = listChooser;
+    }
 }

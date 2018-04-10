@@ -21,6 +21,8 @@ public class AddTaskPresenter {
     public static ListProperty < Container > listProperty;
     public static ListView < Container > toDoID;
 
+    public AddTaskPresenter() {
+    }
 
     public AddTaskPresenter(ObservableList < Container > toDO, ListView < Container > toDoID) {
         this.primaryStage = new Stage();
@@ -53,9 +55,6 @@ public class AddTaskPresenter {
 
     public static void add(Container element) {
         toDO.add(element);
-
-
     }
-
 
 }

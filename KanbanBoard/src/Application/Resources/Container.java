@@ -10,9 +10,6 @@ public class Container {
     private String priority;
     private String priorityColor;
 
-    public Container() {
-    }
-
     public Container(String title, String description, String priority, int y, int m, int d) {
         this.title = title;
         this.description = description;
@@ -51,9 +48,5 @@ public class Container {
     public String getPriority() {
         return priority;
     }
-
-
-
-
 
 }

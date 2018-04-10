@@ -15,44 +15,49 @@
       <file leaf-file-name="GuiControler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="188" column="53" lean-forward="true" selection-start-line="188" selection-start-column="53" selection-end-line="188" selection-end-column="53" />
+            <state relative-caret-position="1632">
+              <caret line="119" column="32" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1629#1630#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
-                <element signature="e#3946#3947#0" expanded="true" />
-                <element signature="e#4004#4005#0" expanded="true" />
-                <element signature="e#4204#4205#0" expanded="true" />
-                <element signature="e#4262#4263#0" expanded="true" />
-                <element signature="e#4456#4457#0" expanded="true" />
-                <element signature="e#4514#4515#0" expanded="true" />
-                <element signature="e#5165#5166#0" expanded="true" />
-                <element signature="e#5195#5196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Container.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Application/Resources/Container.java">
+      <file leaf-file-name="EditTaskPresenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gui.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Resources/Gui.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="-153" />
+      <file leaf-file-name="AddTaskPresenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="GuiPresenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application/Presenter/GuiPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuiControlerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Application/Controler/GuiControlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -62,6 +67,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -92,8 +98,17 @@
         <option value="$PROJECT_DIR$/src/Application/Resources/EditTask.fxml" />
         <option value="$PROJECT_DIR$/src/Application/Presenter/GuiPresenter.java" />
         <option value="$PROJECT_DIR$/src/Application/Resources/Gui.fxml" />
-        <option value="$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
         <option value="$PROJECT_DIR$/src/Application/Resources/Container.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Resources/ContainerTest.java" />
+        <option value="$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Presenter/GuiPresenterTest.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Presenter/EditTaskPresenterTest.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Controler/AddTaskControlerTest.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Presenter/AddTaskPresenterTest.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Controler/EditTaskControlerTest.java" />
+        <option value="$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+        <option value="$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
+        <option value="$PROJECT_DIR$/tests/Application/Controler/GuiControlerTest.java" />
       </list>
     </option>
   </component>
@@ -110,18 +125,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="979" />
-    <option name="height" value="1040" />
+    <option name="x" value="-1773" />
+    <option name="y" value="67" />
+    <option name="width" value="1549" />
+    <option name="height" value="941" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,15 +174,55 @@
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="KanbanBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KanbanBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KanbanBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KanbanBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KanbanBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KanbanBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Controler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KanbanBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KanbanBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Presenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KanbanBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KanbanBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -177,6 +230,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Application.Controler" />
+      <recent name="Application.Presenter" />
+      <recent name="Application.Resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kurze\Documents\Github\Java i systemy mobilne\KanbanBoard\src\Controler" />
     </key>
@@ -193,13 +254,108 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application.Main" />
       <module name="KanbanBoard" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="AddTaskPresenterTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KanbanBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.Presenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Application.Presenter" />
+      <option name="MAIN_CLASS_NAME" value="Application.Presenter.AddTaskPresenterTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="EditTaskPresenterTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KanbanBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.Presenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Application.Presenter" />
+      <option name="MAIN_CLASS_NAME" value="Application.Presenter.EditTaskPresenterTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GuiControlerTest.setAddTaskPresenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KanbanBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.Controler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Application.Controler" />
+      <option name="MAIN_CLASS_NAME" value="Application.Controler.GuiControlerTest" />
+      <option name="METHOD_NAME" value="setAddTaskPresenter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GuiControlerTest.setEditTaskPresenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KanbanBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.Controler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Application.Controler" />
+      <option name="MAIN_CLASS_NAME" value="Application.Controler.GuiControlerTest" />
+      <option name="METHOD_NAME" value="setEditTaskPresenter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -216,9 +372,20 @@
       <envs />
       <method />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AddTaskPresenterTest.add" />
+      <item itemvalue="JUnit.EditTaskPresenterTest.add" />
+      <item itemvalue="JUnit.GuiControlerTest.setEditTaskPresenter" />
+      <item itemvalue="JUnit.GuiControlerTest.setAddTaskPresenter" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GuiControlerTest.setAddTaskPresenter" />
+        <item itemvalue="JUnit.GuiControlerTest.setEditTaskPresenter" />
+        <item itemvalue="JUnit.AddTaskPresenterTest.add" />
+        <item itemvalue="JUnit.EditTaskPresenterTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -250,19 +417,53 @@
       <workItem from="1522706974951" duration="636000" />
       <workItem from="1522875145014" duration="288000" />
       <workItem from="1522927297006" duration="2885000" />
+      <workItem from="1523309266342" duration="10769000" />
+      <workItem from="1523320167700" duration="28000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AddTaskPresenterTest_add - 2018.04.10 at 01h 56m 20s.xml">
+      <configuration name="AddTaskPresenterTest.add" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTaskPresenterTest_add - 2018.04.10 at 01h 56m 28s.xml">
+      <configuration name="AddTaskPresenterTest.add" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTaskPresenterTest_add - 2018.04.10 at 01h 57m 14s.xml">
+      <configuration name="AddTaskPresenterTest.add" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setEditTaskPresenter - 2018.04.10 at 02h 15m 15s.xml">
+      <configuration name="GuiControlerTest.setEditTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setAddTaskPresenter - 2018.04.10 at 02h 17m 38s.xml">
+      <configuration name="GuiControlerTest.setAddTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setEditTaskPresenter - 2018.04.10 at 02h 26m 20s.xml">
+      <configuration name="GuiControlerTest.setEditTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setAddTaskPresenter - 2018.04.10 at 02h 26m 25s.xml">
+      <configuration name="GuiControlerTest.setAddTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setAddTaskPresenter - 2018.04.10 at 02h 27m 35s.xml">
+      <configuration name="GuiControlerTest.setAddTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setAddTaskPresenter - 2018.04.10 at 02h 27m 49s.xml">
+      <configuration name="GuiControlerTest.setAddTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuiControlerTest_setAddTaskPresenter - 2018.04.10 at 02h 27m 58s.xml">
+      <configuration name="GuiControlerTest.setAddTaskPresenter" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117092000" />
+    <option name="totallyTimeSpent" value="127889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-1928" y="-123" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.10871241" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.10838831" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -270,11 +471,11 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19448276" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1998115" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17838542" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14270833" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -287,8 +488,38 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32922128" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32893497" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1998115" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.10838831" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.178125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32922128" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3538936" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32975295" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -298,310 +529,37 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="55" />
+      <option name="time" value="62" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
+    <entry file="file://$PROJECT_DIR$/tests/Application/Controler/GuiControlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="544">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="130" column="71" selection-start-line="130" selection-start-column="71" selection-end-line="130" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="130" column="71" lean-forward="true" selection-start-line="130" selection-start-column="71" selection-end-line="130" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="73" column="10" lean-forward="true" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/GuiPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Resources/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/GuiPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Resources/Container.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java" />
     <entry file="file://$PROJECT_DIR$/src/KanbanBoard.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/com/sun/javafx/tk/quantum/GlassViewEventHandler.java" />
@@ -627,82 +585,670 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/GuiPresenter.java">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/javafx.graphics/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Resources/Gui.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="188" column="53" lean-forward="true" selection-start-line="188" selection-start-column="53" selection-end-line="188" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4262#4263#0" expanded="true" />
-            <element signature="e#4456#4457#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#5165#5166#0" expanded="true" />
-            <element signature="e#5195#5196#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="350" column="25" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/Resources/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">java.lang.ClassValue.Entry</node>
+            <node x="" y="">java.lang.Override</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRParser</node>
+            <node x="" y="">java.lang.Integer</node>
+            <node x="" y="">java.time</node>
+            <node x="" y="">java.lang.Thread</node>
+            <node x="" y="">groovyjarjarantlr.PreservingFileWriter</node>
+            <node x="" y="">java.lang.InheritableThreadLocal</node>
+            <node x="" y="">java.lang.Throwable.PrintStreamOrWriter</node>
+            <node x="" y="">groovyjarjarantlr.MismatchedCharException</node>
+            <node x="" y="">org.omg</node>
+            <node x="" y="">groovyjarjarcommonscli.TypeHandler</node>
+            <node x="" y="">java.lang.Compiler</node>
+            <node x="" y="">java.lang.LinkageError</node>
+            <node x="" y="">java.lang.CharSequence</node>
+            <node x="" y="">java.lang.SuppressWarnings</node>
+            <node x="" y="">java.lang.StringIndexOutOfBoundsException</node>
+            <node x="" y="">groovyjarjarantlr.CommonToken</node>
+            <node x="" y="">groovyjarjarantlr.StringLiteralElement</node>
+            <node x="" y="">groovyjarjarantlr.PythonCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.ASTIterator</node>
+            <node x="" y="">javafx.print</node>
+            <node x="" y="">java.lang.LayerInstantiationException</node>
+            <node x="" y="">java.lang.PublicMethods.Key</node>
+            <node x="" y="">junit.framework</node>
+            <node x="" y="">groovyjarjarantlr.CharScanner</node>
+            <node x="" y="">java.lang.Character.Subset</node>
+            <node x="" y="">java.lang.StringCoding.StringEncoder</node>
+            <node x="" y="">groovyjarjarantlr.CharStreamIOException</node>
+            <node x="" y="">java.lang.ReflectiveOperationException</node>
+            <node x="" y="">java.lang.ClassCastException</node>
+            <node x="" y="">java.lang.LiveStackFrame.PrimitiveSlot</node>
+            <node x="" y="">sun.launcher</node>
+            <node x="" y="">java.lang.VerifyError</node>
+            <node x="" y="">org.jcp</node>
+            <node x="" y="">java.lang.StringBuffer</node>
+            <node x="" y="">java.lang.UnknownError</node>
+            <node x="" y="">java.lang.StringUTF16.CodePointsSpliterator</node>
+            <node x="" y="">java.lang.Runtime.VersionPattern</node>
+            <node x="" y="">java.math</node>
+            <node x="" y="">toolbarButtonGraphics.general</node>
+            <node x="" y="">images.toolbarButtonGraphics</node>
+            <node x="" y="">groovyjarjarantlr.actions</node>
+            <node x="" y="">java.lang.PublicMethods</node>
+            <node x="" y="">groovyjarjarantlr.GrammarAtom</node>
+            <node x="" y="">java.awt</node>
+            <node x="" y="">java.lang.ConditionalSpecialCasing</node>
+            <node x="" y="">java.lang.Module</node>
+            <node x="" y="">junit.runner</node>
+            <node x="" y="">jdk.internal</node>
+            <node x="" y="">org.junit</node>
+            <node x="" y="">org.hamcrest</node>
+            <node x="" y="">groovyjarjarantlr.DefineGrammarSymbols</node>
+            <node x="" y="">sun.swing</node>
+            <node x="" y="">groovyjarjarantlr.StringLiteralSymbol</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamIOException</node>
+            <node x="" y="">javax.sql</node>
+            <node x="" y="">groovyjarjarantlr.PythonCharFormatter</node>
+            <node x="" y="">java.lang.NoSuchFieldError</node>
+            <node x="" y="">java.lang.Readable</node>
+            <node x="" y="">java.lang.Shutdown.Lock</node>
+            <node x="" y="">java.lang.SecurityException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine</node>
+            <node x="" y="">groovy.xml</node>
+            <node x="" y="">jdk.javadoc</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefParserTokenTypes</node>
+            <node x="" y="">groovyjarjarantlr.TokenSymbol</node>
+            <node x="" y="">java.lang.ProcessEnvironment</node>
+            <node x="" y="">java.lang.Process</node>
+            <node x="" y="">groovyjarjarantlr.collections</node>
+            <node x="" y="">com.oracle</node>
+            <node x="" y="">java.lang.CharacterDataLatin1</node>
+            <node x="" y="">java.lang.Class.ReflectionData</node>
+            <node x="" y="">groovyjarjarantlr.HTMLCodeGenerator</node>
+            <node x="" y="">javafx.application</node>
+            <node x="" y="">java.lang.Short.ShortCache</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionGroup</node>
+            <node x="" y="">java.lang.IllegalAccessError</node>
+            <node x="" y="">javafx.fxml</node>
+            <node x="" y="">javax.net</node>
+            <node x="" y="">java.lang.ArrayStoreException</node>
+            <node x="" y="">java.lang.StringCoding.Result</node>
+            <node x="" y="">sun.plugin</node>
+            <node x="" y="">groovyjarjarcommonscli.MissingArgumentException</node>
+            <node x="" y="">groovy.security</node>
+            <node x="" y="">java.lang.ModuleLayer.Controller</node>
+            <node x="" y="">groovyjarjarantlr.LexerGrammar</node>
+            <node x="" y="">java.lang.StringUTF16</node>
+            <node x="" y="">javax.smartcardio</node>
+            <node x="" y="">sun.jvm</node>
+            <node x="" y="">javax.security</node>
+            <node x="" y="">groovyjarjarantlr.StringUtils</node>
+            <node x="" y="">java.lang.ModuleLayer</node>
+            <node x="" y="">javax.rmi</node>
+            <node x="" y="">javax.naming</node>
+            <node x="" y="">java.lang.FunctionalInterface</node>
+            <node x="" y="">groovyjarjarantlr.DiagnosticCodeGenerator</node>
+            <node x="" y="">java.lang.EnumConstantNotPresentException</node>
+            <node x="" y="">com.sun</node>
+            <node x="" y="">java.lang.AbstractStringBuilder</node>
+            <node x="" y="">java.lang.Boolean</node>
+            <node x="" y="">java.lang.CharacterData</node>
+            <node x="" y="">java.lang.ProcessBuilder</node>
+            <node x="" y="">groovyjarjarantlr.TreeElement</node>
+            <node x="" y="">Application.Main</node>
+            <node x="" y="">java.lang.Shutdown</node>
+            <node x="" y="">groovyjarjarantlr.NameSpace</node>
+            <node x="" y="">javax.sound</node>
+            <node x="" y="">java.lang.Package</node>
+            <node x="" y="">jdk.xml</node>
+            <node x="" y="">groovyjarjarantlr.CharBuffer</node>
+            <node x="" y="">groovyjarjarantlr.NoViableAltForCharException</node>
+            <node x="" y="">java.lang.CharacterDataPrivateUse</node>
+            <node x="" y="">groovyjarjarantlr.BaseAST</node>
+            <node x="" y="">groovyjarjarantlr.ImportVocabTokenManager</node>
+            <node x="" y="">java.lang.StackStreamFactory.WalkerState</node>
+            <node x="" y="">groovy.time</node>
+            <node x="" y="">java.lang.LiveStackFrameInfo</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionBuilder</node>
+            <node x="" y="">java.lang.ProcessBuilder.RedirectPipeImpl</node>
+            <node x="" y="">java.lang.Character.CharacterCache</node>
+            <node x="" y="">sun.print</node>
+            <node x="" y="">java.lang.Class</node>
+            <node x="" y="">groovyjarjarantlr.TreeWalkerGrammar</node>
+            <node x="" y="">java.lang.UnsatisfiedLinkError</node>
+            <node x="" y="">java.lang.Thread.State</node>
+            <node x="" y="">java.lang.FdLibm.Cbrt</node>
+            <node x="" y="">java.lang.Float</node>
+            <node x="" y="">java.lang.StringUTF16.CharsSpliterator</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRHashString</node>
+            <node x="" y="">groovyjarjarantlr.CSharpNameSpace</node>
+            <node x="" y="">java.lang.ProcessBuilder.NullOutputStream</node>
+            <node x="" y="">java.lang.ClassLoaderHelper</node>
+            <node x="" y="">groovyjarjarantlr.ParseTreeToken</node>
+            <node x="" y="">java.nio</node>
+            <node x="" y="">groovyjarjarantlr.ZeroOrMoreBlock</node>
+            <node x="" y="">java.lang.Terminator</node>
+            <node x="" y="">java.lang.instrument</node>
+            <node x="" y="">groovyjarjarcommonscli.HelpFormatter</node>
+            <node x="" y="">java.lang.Character</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefParser</node>
+            <node x="" y="">java.lang.StrictMath</node>
+            <node x="" y="">META-INF.services</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamHiddenTokenFilter</node>
+            <node x="" y="">java.lang.reflect</node>
+            <node x="" y="">java.lang.ClassCircularityError</node>
+            <node x="" y="">groovyjarjarantlr.CSharpBlockFinishingInfo</node>
+            <node x="" y="">groovyjarjarcommonscli.GroovyInternalPosixParser</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.ReplaceOp</node>
+            <node x="" y="">java.lang.Runtime</node>
+            <node x="" y="">java.lang.Exception</node>
+            <node x="" y="">groovy.inspect</node>
+            <node x="" y="">groovyjarjarantlr.GrammarSymbol</node>
+            <node x="" y="">groovyjarjarcommonscli.AlreadySelectedException</node>
+            <node x="" y="">groovyjarjarantlr.CharQueue</node>
+            <node x="" y="">java.lang.RuntimePermission</node>
+            <node x="" y="">java.lang.CharacterDataUndefined</node>
+            <node x="" y="">java.sql</node>
+            <node x="" y="">groovyjarjarantlr.TokenQueue</node>
+            <node x="" y="">groovyjarjarantlr.SemanticException</node>
+            <node x="" y="">groovyjarjarantlr.FileLineFormatter</node>
+            <node x="" y="">groovyjarjarantlr.ByteBuffer</node>
+            <node x="" y="">java.lang.ThreadLocal.SuppliedThreadLocal</node>
+            <node x="" y="">java.lang.Error</node>
+            <node x="" y="">java.lang.AssertionError</node>
+            <node x="" y="">groovyjarjarcommonscli.Option</node>
+            <node x="" y="">jdk.nashorn</node>
+            <node x="" y="">groovyjarjarantlr.CharLiteralElement</node>
+            <node x="" y="">groovyjarjarantlr.WildcardElement</node>
+            <node x="" y="">java.lang.IllegalMonitorStateException</node>
+            <node x="" y="">groovyjarjarantlr.Tool</node>
+            <node x="" y="">java.lang.StackStreamFactory.StackFrameTraverser</node>
+            <node x="" y="">java.lang.ProcessEnvironment.CheckedValues</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.RewriteOperation</node>
+            <node x="" y="">groovyjarjarantlr.ActionElement</node>
+            <node x="" y="">java.lang.String</node>
+            <node x="" y="">groovyjarjarcommonscli.CommandLine</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionValidator</node>
+            <node x="" y="">groovyjarjarcommonscli.BasicParser</node>
+            <node x="" y="">java.lang.CompoundEnumeration</node>
+            <node x="" y="">sun.security</node>
+            <node x="" y="">sun.awt</node>
+            <node x="" y="">java.lang.Deprecated</node>
+            <node x="" y="">java.lang.ProcessEnvironment.CheckedEntrySet</node>
+            <node x="" y="">java.lang.RuntimeException</node>
+            <node x="" y="">groovyjarjarantlr.CSharpCharFormatter</node>
+            <node x="" y="">java.lang.StackStreamFactory.FrameBuffer</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamBasicFilter</node>
+            <node x="" y="">groovy.sql</node>
+            <node x="" y="">java.lang.ClassNotFoundException</node>
+            <node x="" y="">groovyjarjarantlr.JavaCodeGeneratorPrintWriterManager</node>
+            <node x="" y="">java.lang.ExceptionInInitializerError</node>
+            <node x="" y="">groovyjarjarantlr.ExceptionHandler</node>
+            <node x="" y="">sun.dc</node>
+            <node x="" y="">sun.management</node>
+            <node x="" y="">jdk.tools</node>
+            <node x="" y="">org.opentest4j</node>
+            <node x="" y="">java.lang.NoSuchMethodException</node>
+            <node x="" y="">java.lang.NullPointerException</node>
+            <node x="" y="">groovyjarjarantlr.TokenBuffer</node>
+            <node x="" y="">java.lang.IllegalCallerException</node>
+            <node x="" y="">toolbarButtonGraphics.development</node>
+            <node x="" y="">javax.accessibility</node>
+            <node x="" y="">javafx.css</node>
+            <node x="" y="">groovyjarjarantlr.PythonBlockFinishingInfo</node>
+            <node x="" y="">java.lang.Thread.Caches</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamSelector</node>
+            <node x="" y="">sun.corba</node>
+            <node x="" y="">java.lang.Math</node>
+            <node x="" y="">groovyjarjarantlr.CommonHiddenStreamToken</node>
+            <node x="" y="">groovyjarjarantlr.RuleRefElement</node>
+            <node x="" y="">toolbarButtonGraphics.text</node>
+            <node x="" y="">java.lang.ClassLoader.ParallelLoaders</node>
+            <node x="" y="">groovyjarjarantlr.ParseTreeRule</node>
+            <node x="" y="">java.lang.ProcessEnvironment.CheckedEntry</node>
+            <node x="" y="">java.lang.ProcessEnvironment.NameComparator</node>
+            <node x="" y="">oracle.jvm</node>
+            <node x="" y="">javafx.stage</node>
+            <node x="" y="">groovyjarjarantlr.CppCodeGenerator</node>
+            <node x="" y="">java.lang.StackStreamFactory.AbstractStackWalker</node>
+            <node x="" y="">java.lang.StringDecoderUTF8</node>
+            <node x="" y="">groovyjarjarantlr.DumpASTVisitor</node>
+            <node x="" y="">groovyjarjarantlr.CharStreamException</node>
+            <node x="" y="">groovy.ui</node>
+            <node x="" y="">groovy.grape</node>
+            <node x="" y="">groovy.util</node>
+            <node x="" y="">java.lang.LiveStackFrame</node>
+            <node x="" y="">jdk.vm</node>
+            <node x="" y="">sun.reflect</node>
+            <node x="" y="">groovyjarjarantlr.preprocessor</node>
+            <node x="" y="">groovyjarjarantlr.LexerSharedInputState</node>
+            <node x="" y="">groovyjarjarantlr.Parser</node>
+            <node x="" y="">groovyjarjarantlr.AlternativeBlock</node>
+            <node x="" y="">java.lang.CharacterName</node>
+            <node x="" y="">java.lang.Iterable</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefLexer</node>
+            <node x="" y="">groovyjarjarantlr.DefaultJavaCodeGeneratorPrintWriterManager</node>
+            <node x="" y="">java.lang.NoClassDefFoundError</node>
+            <node x="" y="">java.lang.Package.VersionInfo</node>
+            <node x="" y="">java.lang.StringCoding.StringDecoder8859_1</node>
+            <node x="" y="">javax.management</node>
+            <node x="" y="">java.lang.PublicMethods.MethodList</node>
+            <node x="" y="">javax.script</node>
+            <node x="" y="">java.lang.SecurityManager</node>
+            <node x="" y="">jdk.management</node>
+            <node x="" y="">java.lang.InstantiationError</node>
+            <node x="" y="">java.lang.ClassValue</node>
+            <node x="" y="">groovyjarjarcommonscli.Parser</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRLexer</node>
+            <node x="" y="">java.lang.StackTraceElement.HashedModules</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamException</node>
+            <node x="" y="">java.applet</node>
+            <node x="" y="">java.lang.IndexOutOfBoundsException</node>
+            <node x="" y="">java.lang.ApplicationShutdownHooks</node>
+            <node x="" y="">jdk.incubator</node>
+            <node x="" y="">groovyjarjarantlr.LLkGrammarAnalyzer</node>
+            <node x="" y="">java.lang.AbstractMethodError</node>
+            <node x="" y="">java.lang.ThreadGroup</node>
+            <node x="" y="">java.lang.CloneNotSupportedException</node>
+            <node x="" y="">java.lang.CharacterData0E</node>
+            <node x="" y="">org.xml</node>
+            <node x="" y="">java.lang.NoSuchFieldException</node>
+            <node x="" y="">java.lang.Long</node>
+            <node x="" y="">java.lang.CharacterData01</node>
+            <node x="" y="">java.lang.ArithmeticException</node>
+            <node x="" y="">java.lang.Runtime.Version</node>
+            <node x="" y="">java.lang.CharacterData02</node>
+            <node x="" y="">groovyjarjarantlr.ASTFactory</node>
+            <node x="" y="">groovyjarjarantlr.ParserSharedInputState</node>
+            <node x="" y="">java.lang.String.CaseInsensitiveComparator</node>
+            <node x="" y="">java.lang.CharacterData00</node>
+            <node x="" y="">jdk.editpad</node>
+            <node x="" y="">javax.imageio</node>
+            <node x="" y="">java.lang.StackWalker.ExtendedOption</node>
+            <node x="" y="">javafx.concurrent</node>
+            <node x="" y="">java.lang.Throwable.WrappedPrintWriter</node>
+            <node x="" y="">java.lang.Byte.ByteCache</node>
+            <node x="" y="">groovy.test</node>
+            <node x="" y="">groovyjarjarantlr.InputBuffer</node>
+            <node x="" y="">java.lang.ThreadDeath</node>
+            <node x="" y="">groovyjarjarantlr.ParseTree</node>
+            <node x="" y="">groovyjarjarantlr.TokenStream</node>
+            <node x="" y="">groovyjarjarantlr.debug</node>
+            <node x="" y="">javafx.scene</node>
+            <node x="" y="">groovyjarjarantlr.SimpleTokenManager</node>
+            <node x="" y="">jdk.dynalink</node>
+            <node x="" y="">javax.transaction</node>
+            <node x="" y="">groovyjarjarantlr.ASTNULLType</node>
+            <node x="" y="">java.lang.StringBuilder</node>
+            <node x="" y="">java.lang.ClassLoader</node>
+            <node x="" y="">groovyjarjarantlr.SynPredBlock</node>
+            <node x="" y="">java.lang.FdLibm.Pow</node>
+            <node x="" y="">javax.xml</node>
+            <node x="" y="">java.lang.StackOverflowError</node>
+            <node x="" y="">groovyjarjarantlr.build</node>
+            <node x="" y="">java.lang.VersionProps</node>
+            <node x="" y="">java.lang.annotation</node>
+            <node x="" y="">java.lang.WeakPairMap.WeakRefPeer</node>
+            <node x="" y="">java.lang.StackWalker</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRecognitionException</node>
+            <node x="" y="">java.lang.ProcessImpl</node>
+            <node x="" y="">sun.nio</node>
+            <node x="" y="">jdk.jfr</node>
+            <node x="" y="">groovyjarjarcommonscli.CommandLineParser</node>
+            <node x="" y="">groovyjarjarantlr.JavaCharFormatter</node>
+            <node x="" y="">java.lang.ProcessHandle</node>
+            <node x="" y="">java.lang.ClassLoader.NativeLibrary</node>
+            <node x="" y="">groovyjarjarcommonscli.PosixParser</node>
+            <node x="" y="">java.lang.StackTraceElement</node>
+            <node x="" y="">sun.text</node>
+            <node x="" y="">Application.Presenter</node>
+            <node x="" y="">java.lang.SafeVarargs</node>
+            <node x="" y="">groovy.swing</node>
+            <node x="" y="">java.lang.IncompatibleClassChangeError</node>
+            <node x="" y="">java.lang.NoSuchMethodError</node>
+            <node x="" y="">groovy.beans</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRStringBuffer</node>
+            <node x="" y="">jdk.security</node>
+            <node x="" y="">java.lang.StrictMath.RandomNumberGeneratorHolder</node>
+            <node x="" y="">java.lang.ArrayIndexOutOfBoundsException</node>
+            <node x="" y="">sun.plugin2</node>
+            <node x="" y="">groovy.model</node>
+            <node x="" y="">java.text</node>
+            <node x="" y="">java.lang.System.Logger</node>
+            <node x="" y="">groovyjarjarantlr.RuleEndElement</node>
+            <node x="" y="">sun.applet</node>
+            <node x="" y="">javax.print</node>
+            <node x="" y="">groovyjarjarantlr.ToolErrorHandler</node>
+            <node x="" y="">groovyjarjarantlr.TreeParserSharedInputState</node>
+            <node x="" y="">java.lang.ProcessImpl.LazyPattern</node>
+            <node x="" y="">java.rmi</node>
+            <node x="" y="">groovyjarjarantlr.ASdebug</node>
+            <node x="" y="">java.lang.Character.UnicodeBlock</node>
+            <node x="" y="">java.lang.Thread.UncaughtExceptionHandler</node>
+            <node x="" y="">java.beans</node>
+            <node x="" y="">groovyjarjarantlr.DefaultToolErrorHandler</node>
+            <node x="" y="">java.lang.Runnable</node>
+            <node x="" y="">org.codehaus</node>
+            <node x="" y="">groovyjarjarantlr.Grammar</node>
+            <node x="" y="">groovyjarjarantlr.CharFormatter</node>
+            <node x="" y="">java.lang.Integer.IntegerCache</node>
+            <node x="" y="">java.lang.Throwable.SentinelHolder</node>
+            <node x="" y="">groovy.json</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRError</node>
+            <node x="" y="">org.apiguardian</node>
+            <node x="" y="">java.net</node>
+            <node x="" y="">java.lang.Short</node>
+            <node x="" y="">java.lang.InstantiationException</node>
+            <node x="" y="">javax.lang</node>
+            <node x="" y="">groovyjarjarantlr.TokenWithIndex</node>
+            <node x="" y="">groovyjarjarantlr.FileCopyException</node>
+            <node x="" y="">java.lang.StringCoding</node>
+            <node x="" y="">sun.misc</node>
+            <node x="" y="">groovyjarjarantlr.Token</node>
+            <node x="" y="">javafx.util</node>
+            <node x="" y="">groovyjarjarantlr.Version</node>
+            <node x="" y="">java.lang.ThreadLocal</node>
+            <node x="" y="">java.lang.ProcessBuilder.Redirect</node>
+            <node x="" y="">java.lang.FdLibm</node>
+            <node x="" y="">java.lang.LiveStackFrameInfo.PrimitiveSlot64</node>
+            <node x="" y="">groovyjarjarcommonscli.MissingOptionException</node>
+            <node x="" y="">java.lang.ProcessHandleImpl</node>
+            <node x="" y="">java.lang.BootstrapMethodError</node>
+            <node x="" y="">java.lang.Class.AnnotationData</node>
+            <node x="" y="">java.lang.ProcessHandleImpl.Info</node>
+            <node x="" y="">java.lang.Long.LongCache</node>
+            <node x="" y="">java.lang.StringLatin1.CharsSpliterator</node>
+            <node x="" y="">groovyjarjarantlr.AlternativeElement</node>
+            <node x="" y="">java.lang.ProcessHandleImpl.ExitCompletion</node>
+            <node x="" y="">groovy.io</node>
+            <node x="" y="">groovy.transform</node>
+            <node x="" y="">javafx.animation</node>
+            <node x="" y="">groovyjarjarantlr.TreeBlockContext</node>
+            <node x="" y="">java.lang.LiveStackFrameInfo.PrimitiveSlot32</node>
+            <node x="" y="">java.lang.ThreadLocal.ThreadLocalMap</node>
+            <node x="" y="">groovyjarjarantlr.CSharpCodeGenerator</node>
+            <node x="" y="">groovy.servlet</node>
+            <node x="" y="">javafx.geometry</node>
+            <node x="" y="">java.lang.StackStreamFactory.LiveStackInfoTraverser</node>
+            <node x="" y="">groovyjarjarantlr.LLkAnalyzer</node>
+            <node x="" y="">java.lang.invoke</node>
+            <node x="" y="">java.lang.Process.PipeInputStream</node>
+            <node x="" y="">jdk.nio</node>
+            <node x="" y="">java.lang.management</node>
+            <node x="" y="">java.lang.Appendable</node>
+            <node x="" y="">sun.io</node>
+            <node x="" y="">groovyjarjarantlr.ASTPair</node>
+            <node x="" y="">groovyjarjarasm.asm</node>
+            <node x="" y="">groovyjarjarantlr.ParserGrammar</node>
+            <node x="" y="">groovyjarjarantlr.CppCharFormatter</node>
+            <node x="" y="">java.lang.Math.RandomNumberGeneratorHolder</node>
+            <node x="" y="">groovyjarjarantlr.Lookahead</node>
+            <node x="" y="">groovyjarjarantlr.CommonASTWithHiddenTokens</node>
+            <node x="" y="">groovyjarjarantlr.BlockWithImpliedExitPath</node>
+            <node x="" y="">java.lang.Object</node>
+            <node x="" y="">java.lang.StackWalker.Option</node>
+            <node x="" y="">javax.jnlp</node>
+            <node x="" y="">org.ietf</node>
+            <node x="" y="">javax.swing</node>
+            <node x="" y="">java.lang.ProcessHandle.Info</node>
+            <node x="" y="">java.lang.Thread.WeakClassKey</node>
+            <node x="" y="">java.lang.System</node>
+            <node x="" y="">groovyjarjarantlr.BlockEndElement</node>
+            <node x="" y="">java.lang.ProcessBuilder.NullInputStream</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRetryException</node>
+            <node x="" y="">groovyjarjarantlr.CommonAST</node>
+            <node x="" y="">java.lang.ClassValue.Identity</node>
+            <node x="" y="">java.lang.StackWalker.StackFrame</node>
+            <node x="" y="">java.lang.ref</node>
+            <node x="" y="">groovyjarjarantlr.TokenRangeElement</node>
+            <node x="" y="">sun.tools</node>
+            <node x="" y="">java.lang.InternalError</node>
+            <node x="" y="">groovyjarjarcommonscli.Options</node>
+            <node x="" y="">groovyjarjarantlr.TokenManager</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.InsertBeforeOp</node>
+            <node x="" y="">groovyjarjarantlr.DocBookCodeGenerator</node>
+            <node x="" y="">java.lang.ConditionalSpecialCasing.Entry</node>
+            <node x="" y="">javax.activation</node>
+            <node x="" y="">groovyjarjarantlr.JavaBlockFinishingInfo</node>
+            <node x="" y="">java.lang.Void</node>
+            <node x="" y="">java.security</node>
+            <node x="" y="">java.lang.StringLatin1</node>
+            <node x="" y="">groovy.jmx</node>
+            <node x="" y="">sun.java2d</node>
+            <node x="" y="">org.w3c</node>
+            <node x="" y="">jdk.jshell</node>
+            <node x="" y="">java.lang.AssertionStatusDirectives</node>
+            <node x="" y="">groovyjarjarantlr.RuleBlock</node>
+            <node x="" y="">groovyjarjarantlr.Utils</node>
+            <node x="" y="">Application.Resources</node>
+            <node x="" y="">groovyjarjarantlr.CodeGenerator</node>
+            <node x="" y="">META-INF.licenses</node>
+            <node x="" y="">groovyjarjarantlr.TreeParser</node>
+            <node x="" y="">java.lang.FdLibm.Hypot</node>
+            <node x="" y="">groovy.mock</node>
+            <node x="" y="">groovyjarjarantlr.PrintWriterWithSMAP</node>
+            <node x="" y="">javafx.embed</node>
+            <node x="" y="">groovyjarjarantlr.OneOrMoreBlock</node>
+            <node x="" y="">java.lang.Throwable</node>
+            <node x="" y="">javax.crypto</node>
+            <node x="" y="">javafx.collections</node>
+            <node x="" y="">java.util</node>
+            <node x="" y="">java.lang.Double</node>
+            <node x="" y="">java.lang.TypeNotPresentException</node>
+            <node x="" y="">javafx.event</node>
+            <node x="" y="">groovyjarjarcommonscli.ParseException</node>
+            <node x="" y="">groovy.text</node>
+            <node x="" y="">java.lang.VirtualMachineError</node>
+            <node x="" y="">jdk.net</node>
+            <node x="" y="">junit.textui</node>
+            <node x="" y="">groovyjarjarantlr.NoViableAltException</node>
+            <node x="" y="">groovyjarjarantlr.MismatchedTokenException</node>
+            <node x="" y="">groovyjarjarantlr.ActionTransInfo</node>
+            <node x="" y="">java.lang.Number</node>
+            <node x="" y="">java.lang.NegativeArraySizeException</node>
+            <node x="" y="">java.lang.UnsupportedOperationException</node>
+            <node x="" y="">junit.extensions</node>
+            <node x="" y="">java.lang.StackFrameInfo</node>
+            <node x="" y="">groovyjarjarantlr.JavaCodeGenerator</node>
+            <node x="" y="">java.lang.NumberFormatException</node>
+            <node x="" y="">jdk.packager</node>
+            <node x="" y="">groovyjarjarantlr.BlockContext</node>
+            <node x="" y="">javax.activity</node>
+            <node x="" y="">groovyjarjarantlr.RuleSymbol</node>
+            <node x="" y="">java.lang.StringCoding.StringDecoder</node>
+            <node x="" y="">java.lang.ClassFormatError</node>
+            <node x="" y="">java.lang.Comparable</node>
+            <node x="" y="">java.lang.WeakPairMap</node>
+            <node x="" y="">sun.font</node>
+            <node x="" y="">javafx.beans</node>
+            <node x="" y="">java.lang.OutOfMemoryError</node>
+            <node x="" y="">java.lang.IllegalStateException</node>
+            <node x="" y="">java.lang.UnsupportedClassVersionError</node>
+            <node x="" y="">groovyjarjarantlr.GrammarAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.ASTVisitor</node>
+            <node x="" y="">java.lang.ProcessEnvironment.EntryComparator</node>
+            <node x="" y="">sun.invoke</node>
+            <node x="" y="">java.lang.AutoCloseable</node>
+            <node x="" y="">java.lang.FdLibm.Exp</node>
+            <node x="" y="">javax.annotation</node>
+            <node x="" y="">javax.jws</node>
+            <node x="" y="">java.lang.ClassValue.Version</node>
+            <node x="" y="">java.lang.Enum</node>
+            <node x="" y="">groovy.lang</node>
+            <node x="" y="">java.lang.Class.Atomic</node>
+            <node x="" y="">toolbarButtonGraphics.navigation</node>
+            <node x="" y="">java.lang.Class.EnclosingMethodInfo</node>
+            <node x="" y="">java.lang.Byte</node>
+            <node x="" y="">java.lang.System.LoggerFinder</node>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">java.lang.IllegalAccessException</node>
+            <node x="" y="">java.lang.WeakPairMap.Pair</node>
+            <node x="" y="">groovyjarjarantlr.TokenRefElement</node>
+            <node x="" y="">java.lang.StackStreamFactory.CallerClassFinder</node>
+            <node x="" y="">java.lang.Throwable.WrappedPrintStream</node>
+            <node x="" y="">groovyjarjarantlr.Alternative</node>
+            <node x="" y="">java.lang.ProcessEnvironment.CheckedKeySet</node>
+            <node x="" y="">sun.util</node>
+            <node x="" y="">groovyjarjarcommonscli.HelpFormatter.OptionComparator</node>
+            <node x="" y="">groovyjarjarantlr.MakeGrammar</node>
+            <node x="" y="">sun.datatransfer</node>
+            <node x="" y="">groovyjarjarcommonscli.GnuParser</node>
+            <node x="" y="">groovyjarjarantlr.RecognitionException</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRException</node>
+            <node x="" y="">sun.jvmstat</node>
+            <node x="" y="">sun.net</node>
+            <node x="" y="">groovyjarjarantlr.ExceptionSpec</node>
+            <node x="" y="">groovyjarjarantlr.TreeSpecifierNode</node>
+            <node x="" y="">groovyjarjarantlr.CharRangeElement</node>
+            <node x="" y="">java.lang.Character.UnicodeScript</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRGrammarParseBehavior</node>
+            <node x="" y="">sun.rmi</node>
+            <node x="" y="">sun.instrument</node>
+            <node x="" y="">groovyjarjarcommonscli.UnrecognizedOptionException</node>
+            <node x="" y="">java.lang.StringConcatHelper</node>
+            <node x="" y="">groovyjarjarantlr.GrammarElement</node>
+            <node x="" y="">netscape.javascript</node>
+            <node x="" y="">java.lang.IllegalThreadStateException</node>
+            <node x="" y="">groovyjarjarcommonscli.PatternOptionBuilder</node>
+            <node x="" y="">javax.tools</node>
+            <node x="" y="">groovyjarjarantlr.DefaultFileLineFormatter</node>
+            <node x="" y="">java.lang.IllegalArgumentException</node>
+            <node x="" y="">groovyjarjarantlr.LLkParser</node>
+            <node x="" y="">java.lang.module</node>
+            <node x="" y="">java.lang.StackStreamFactory</node>
+            <node x="" y="">java.lang.ClassValue.ClassValueMap</node>
+            <node x="" y="">java.lang.NamedPackage</node>
+            <node x="" y="">java.io</node>
+            <node x="" y="">java.lang.InterruptedException</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokenTypes</node>
+            <node x="" y="">groovyjarjarcommonscli.Util</node>
+            <node x="" y="">Application.Controler</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.DeleteOp</node>
+            <node x="" y="">groovyjarjarantlr.CppBlockFinishingInfo</node>
+            <node x="" y="">sun.usagetracker</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.1" x="12812.0" y="7590.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Controler/AddTaskControlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Presenter/GuiPresenterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/EditTaskControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Controler/EditTaskControlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Presenter/EditTaskPresenterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Resources/ContainerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="82" lean-forward="true" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Presenter/AddTaskPresenterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/AddTaskControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/EditTaskPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Controler/GuiControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="119" column="32" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
           <folding>
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/AddTaskPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Presenter/GuiPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Application/Controler/GuiControlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
         </state>
       </provider>
     </entry>
