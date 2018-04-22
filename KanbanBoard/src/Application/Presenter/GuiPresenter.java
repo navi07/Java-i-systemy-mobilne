@@ -23,10 +23,10 @@ public class GuiPresenter {
             AnchorPane rootLayout = loader.load();
 
             GuiControler guiControler = loader.getController();
-            guiControler.setEditTaskPresenter(new EditTaskPresenter(guiControler.toDoList, guiControler.toDoID,
-                    guiControler.inProgressList, guiControler.inProgressID,
-                    guiControler.doneList, guiControler.doneID));
-            guiControler.setAddTaskPresenter(new AddTaskPresenter(guiControler.toDoList, guiControler.toDoID));
+            guiControler.setEditTaskPresenter(new EditTaskPresenter(GuiControler.toDoList, guiControler.toDoID,
+                    GuiControler.inProgressList, guiControler.inProgressID,
+                    GuiControler.doneList, guiControler.doneID));
+            guiControler.setAddTaskPresenter(new AddTaskPresenter(GuiControler.toDoList, guiControler.toDoID));
 
             // add layout to a scene and show them all
             Scene scene = new Scene(rootLayout);

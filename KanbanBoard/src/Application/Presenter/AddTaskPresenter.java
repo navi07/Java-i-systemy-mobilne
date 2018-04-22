@@ -1,7 +1,7 @@
 package Application.Presenter;
 
+import Application.Controler.GuiControler;
 import Application.Resources.Container;
-import javafx.beans.property.ListProperty;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,25 +9,21 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 
 public class AddTaskPresenter {
-    public static Stage primaryStage;
-
-    public static ObservableList < Container > toDO;
-    public static ObservableList < Container > inProgress;
-    public static ObservableList < Container > done;
-    public static ListProperty < Container > listProperty;
-    public static ListView < Container > toDoID;
+    private static Stage primaryStage;
+    private static ObservableList < Container > toDO;
+    private static ListView < Container > toDoID;
 
     public AddTaskPresenter() {
     }
 
-    public AddTaskPresenter(ObservableList < Container > toDO, ListView < Container > toDoID) {
-        this.primaryStage = new Stage();
-        this.toDO = toDO;
-        this.toDoID = toDoID;
+    AddTaskPresenter(ObservableList<Container> toDO, ListView<Container> toDoID) {
+        primaryStage = new Stage();
+        AddTaskPresenter.toDO = toDO;
+        AddTaskPresenter.toDoID = toDoID;
     }
 
     public void show() {
@@ -54,7 +50,6 @@ public class AddTaskPresenter {
     }
 
     public static void add(Container element) {
-        toDO.add(element);
+        GuiControler.toDoList.add(element);
     }
-
 }

@@ -3,6 +3,7 @@ package Application.Controler;
 
 import Application.Presenter.EditTaskPresenter;
 import Application.Resources.Container;
+import Application.Resources.Warning;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -14,13 +15,13 @@ public class EditTaskControler {
     public TextField titleID;
     public ComboBox priorityID;
     public DatePicker expDateID;
-    ObservableList < String > priority_list = FXCollections.observableArrayList("Low", "Medium", "High");
+    private ObservableList < String > priority_list = FXCollections.observableArrayList("Low", "Medium", "High");
+    private Warning warning = new Warning();
 
     public EditTaskControler() {}
 
     @FXML
     public void initialize() {
-
         priorityID.setItems(priority_list);
         titleID.setText(EditTaskPresenter.getElement().getTitle());
         descriptionID.setText(EditTaskPresenter.getElement().getDescription());
@@ -33,7 +34,7 @@ public class EditTaskControler {
         try {
             if (titleID.getText().equals("") ||
                     priorityID.getSelectionModel().isEmpty() ||
-                    expDateID.getValue().equals(null)) {
+                    expDateID.getValue() == null) {
                 throw  new NullPointerException();
             }
             else {
@@ -49,10 +50,7 @@ public class EditTaskControler {
             }
 
         } catch (NullPointerException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Input all data !");
-            alert.show();
+            warning.showErrorAlert();
         }
     }
 }

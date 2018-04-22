@@ -1,8 +1,9 @@
 package Application.Resources;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Container {
+public class Container implements Serializable {
 
     private String title;
     private String description;

@@ -1,5 +1,6 @@
 package Application.Presenter;
 
+import Application.Controler.GuiControler;
 import Application.Resources.Container;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -10,37 +11,37 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class EditTaskPresenter {
-    public static Stage primaryStage;
+    private static Stage primaryStage;
     public static int listChooser;
-    static Container element;
-    static int index;
+    private static Container element;
+    private static int index;
 
-    public static ObservableList < Container > toDO;
-    public static ObservableList < Container > inProgress;
-    public static ObservableList < Container > done;
-    public static ListView < Container > toDoID;
-    public static ListView < Container > inProgressID;
-    public static ListView < Container > doneID;
+    private static ObservableList < Container > toDO;
+    private static ObservableList < Container > inProgress;
+    private static ObservableList < Container > done;
+    private static ListView < Container > toDoID;
+    private static ListView < Container > inProgressID;
+    private static ListView < Container > doneID;
 
     public EditTaskPresenter(ObservableList < Container > toDO, ListView < Container > toDoID,
                              ObservableList < Container > inProgress, ListView < Container > inProgressID,
                              ObservableList < Container > done, ListView < Container > doneID) {
-        this.primaryStage = new Stage();
-        this.toDoID = toDoID;
-        this.toDO = toDO;
-        this.inProgress = inProgress;
-        this.inProgressID = inProgressID;
-        this.done = done;
-        this.doneID = doneID;
+        primaryStage = new Stage();
+        EditTaskPresenter.toDoID = toDoID;
+        EditTaskPresenter.toDO = toDO;
+        EditTaskPresenter.inProgress = inProgress;
+        EditTaskPresenter.inProgressID = inProgressID;
+        EditTaskPresenter.done = done;
+        EditTaskPresenter.doneID = doneID;
     }
 
     public EditTaskPresenter() {
-
+        this.primaryStage = new Stage();
     }
 
     public void show(Container element, int index) {
-        this.element = element;
-        this.index = index;
+        EditTaskPresenter.element = element;
+        EditTaskPresenter.index = index;
         try {
 
             // load layout from FXML file
@@ -70,16 +71,16 @@ public class EditTaskPresenter {
 
     public static int add(Container element, int index) {
         if (listChooser == 1) {
-            toDO.remove(index);
-            toDO.add(element);
+            GuiControler.toDoList.remove(index);
+            GuiControler.toDoList.add(element);
             return 1;
         } else if (listChooser == 2) {
-            inProgress.remove(index);
-            inProgress.add(element);
+            GuiControler.inProgressList.remove(index);
+            GuiControler.inProgressList.add(element);
             return 1;
         } else if (listChooser == 3) {
-            done.remove(index);
-            done.add(element);
+            GuiControler.doneList.remove(index);
+            GuiControler.doneList.add(element);
             return 1;
         }
         else return 0;
@@ -94,9 +95,5 @@ public class EditTaskPresenter {
 
     public static void setElement(Container element) {
         EditTaskPresenter.element = element;
-    }
-
-    public static void setListChooser(int listChooser) {
-        EditTaskPresenter.listChooser = listChooser;
     }
 }

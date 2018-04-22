@@ -12,15 +12,19 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="402.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controler.GuiControler">
+<AnchorPane fx:id="anchorPaneGlobalID" prefHeight="402.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controler.GuiControler">
    <children>
-      <AnchorPane layoutX="2.0" prefHeight="424.0" prefWidth="800.0">
+      <AnchorPane fx:id="anchorPaneMainID" layoutX="2.0" prefHeight="424.0" prefWidth="800.0">
          <children>
             <MenuBar prefHeight="32.0" prefWidth="800.0">
               <menus>
                 <Menu fx:id="fileID" mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem fx:id="CloseID" mnemonicParsing="false" onAction="#handleCloseID" text="Close" />
+                        <MenuItem fx:id="saveToFileID" mnemonicParsing="false" text="Save to file" />
+                        <MenuItem fx:id="loadFromFileID" mnemonicParsing="false" text="Load from file" />
+                        <MenuItem fx:id="exportToFileID" mnemonicParsing="false" text="Export to file" />
+                        <MenuItem fx:id="importFromFileID" mnemonicParsing="false" text="Import from file" />
+                    <MenuItem fx:id="closeID" mnemonicParsing="false" onAction="#handleCloseID" text="Close" />
                   </items>
                 </Menu>
                   <Menu fx:id="AboutID" mnemonicParsing="false">

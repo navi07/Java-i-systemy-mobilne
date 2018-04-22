@@ -3,54 +3,65 @@ package Application.Controler;
 import Application.Presenter.AddTaskPresenter;
 import Application.Presenter.EditTaskPresenter;
 import Application.Resources.Container;
+import Application.Resources.Serializer;
+import Application.Resources.Warning;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.util.Callback;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import java.io.*;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-
-public class GuiControler implements Initializable
+public class GuiControler implements Initializable, Serializable
 {
+    public AnchorPane anchorPaneGlobalID;
+    public AnchorPane anchorPaneMainID;
     private EditTaskPresenter editTaskPresenter;
     private AddTaskPresenter addTaskPresenter;
 
-    public ObservableList<Container> toDoList = FXCollections.observableArrayList();
-    public ObservableList<Container> inProgressList = FXCollections.observableArrayList();
-    public ObservableList<Container> doneList = FXCollections.observableArrayList();
+    public static ObservableList<Container> toDoList = FXCollections.observableArrayList();
+    public static ObservableList<Container> inProgressList = FXCollections.observableArrayList();
+    public static ObservableList<Container> doneList = FXCollections.observableArrayList();
 
     public ListView<Container> toDoID = new ListView<>(toDoList);
     public ListView<Container> inProgressID = new ListView<>(inProgressList);
     public ListView<Container> doneID = new ListView<>(doneList);
 
-    public MenuItem CloseID;
+    public MenuItem closeID;
+    public MenuItem saveToFileID;
+    public MenuItem loadFromFileID;
+    public MenuItem exportToFileID;
+    public MenuItem importFromFileID;
     public Menu AboutID;
+
+    private Serializer serializer = new Serializer();
+    private Warning warning = new Warning();
 
     public GuiControler() { }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
         Label about = new Label("About");
-        about.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                AuthorMessage();
-            }
-        });
+        about.setOnMouseClicked(event -> AuthorMessage());
 
         AboutID.setGraphic(about);
         toDoID.setItems(toDoList);
         inProgressID.setItems(inProgressList);
         doneID.setItems(doneList);
+        loadFromFile();
+
+        saveToFileID.setOnAction(event -> saveToFile());
+        loadFromFileID.setOnAction(event -> loadFromFile());
+        importFromFileID.setOnAction(event -> importFromFile());
+        exportToFileID.setOnAction(event -> exportToFile());
 
         toDoID.setOnKeyPressed(event -> {
                     switch (event.getCode()) {
@@ -92,24 +103,92 @@ public class GuiControler implements Initializable
             }
         });
 
-        toDoID.setCellFactory(new Callback<ListView<Container>, ListCell<Container>>() {
-            @Override public ListCell<Container> call(ListView<Container> list) {
-                return new ColorRectCell();
-            }
-        });
-        inProgressID.setCellFactory(new Callback<ListView<Container>,ListCell<Container>>() {
-            @Override
-            public ListCell<Container> call(ListView<Container> list) {
-                return new ColorRectCell();
-            }}
-        );
-        doneID.setCellFactory(new Callback<ListView<Container>,ListCell<Container>>() {
-            @Override
-            public ListCell<Container> call(ListView<Container> list) {
-                return new ColorRectCell();
-            }}
-        );
+        toDoID.setCellFactory(list -> new ColorRectCell());
+        inProgressID.setCellFactory(list -> new ColorRectCell());
+        doneID.setCellFactory(list -> new ColorRectCell());
+    }
 
+    private void deserializeData(ObjectInputStream inputStream) throws IOException, ClassNotFoundException {
+        serializer = (Serializer) inputStream.readObject();
+
+        toDoList = FXCollections.observableArrayList(serializer.toDO);
+        toDoID.setItems(toDoList);
+
+        inProgressList = FXCollections.observableArrayList(serializer.inProgress);
+        inProgressID.setItems(inProgressList);
+
+        doneList = FXCollections.observableArrayList(serializer.done);
+        doneID.setItems(doneList);
+    }
+
+    protected void saveToFile(){
+        serializer.toDO = new ArrayList<>(toDoList);
+        serializer.inProgress = new ArrayList<>(inProgressList);
+        serializer.done = new ArrayList<>(doneList);
+
+        try(ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("Object.bin"))){
+            outputStream.writeObject(serializer);
+        } catch (IOException e) {
+            warning.showSaveErrorAlert();
+        }
+    }
+
+    private void loadFromFile(){
+        try(ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("Object.bin"))){
+            deserializeData(inputStream);
+        } catch (FileNotFoundException | NullPointerException e){
+            warning.showFileNotFoundAlert();
+        } catch (IOException | ClassNotFoundException e) {
+            warning.showLoadErrorAlert();
+        }
+    }
+
+    private void importFromFile(){
+        FileChooser fileChooser = new FileChooser();
+        Stage FCstage = (Stage) anchorPaneMainID.getScene().getWindow();
+        File workingDirectory = new File(System.getProperty("user.dir"));
+        fileChooser.setInitialDirectory(workingDirectory);
+        fileChooser.setTitle("Choose file to import data");
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("JSON", "*.json"),
+                new FileChooser.ExtensionFilter("CSV", "*.csv")
+        );
+        File file = fileChooser.showOpenDialog(FCstage);
+
+        if (file != null) {
+            try(ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(file.getAbsolutePath()))){
+                deserializeData(inputStream);
+            } catch (FileNotFoundException | NullPointerException e){
+                warning.showFileNotFoundAlert();
+            } catch (IOException | ClassNotFoundException e) {
+                warning.showLoadErrorAlert();
+            }
+        }
+    }
+
+    private void exportToFile(){
+        FileChooser fileChooser = new FileChooser();
+        Stage FCstage = (Stage) anchorPaneMainID.getScene().getWindow();
+        File workingDirectory = new File(System.getProperty("user.dir"));
+        fileChooser.setInitialDirectory(workingDirectory);
+        fileChooser.setTitle("Make file to export data");
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("JSON", "*.json"),
+                new FileChooser.ExtensionFilter("CSV", "*.csv")
+        );
+        File file = fileChooser.showSaveDialog(FCstage);
+
+        if (file != null) {
+            serializer.toDO = new ArrayList<>(toDoList);
+            serializer.inProgress = new ArrayList<>(inProgressList);
+            serializer.done = new ArrayList<>(doneList);
+
+            try(ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(file.getAbsolutePath()))){
+                outputStream.writeObject(serializer);
+            } catch (IOException e) {
+                warning.showSaveErrorAlert();
+            }
+        }
     }
 
     public void setEditTaskPresenter(EditTaskPresenter editTaskPresenter){
@@ -121,63 +200,61 @@ public class GuiControler implements Initializable
 
 
     public void AuthorMessage() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("About author");
-        alert.setHeaderText("Author : Patryk Kurzeja");
-        alert.showAndWait();
+        warning.showAuthorMessage();
     }
 
     @FXML
     public void handlenewTaskButton(){addTaskPresenter.show();}
 
     @FXML
-    public void handleCloseID(ActionEvent actionEvent) {
+    public void handleCloseID() {
+        saveToFile();
         System.exit(0);
     }
 
 
-    public void handleDeleteFirst(ActionEvent actionEvent) {
+    public void handleDeleteFirst() {
         if (toDoID.getSelectionModel().getSelectedIndex() >= 0) {
             int index = toDoID.getSelectionModel().getSelectedIndex();
             toDoID.getItems().remove(index);
         }
     }
 
-    public void handleEditFirst(ActionEvent actionEvent) {
+    public void handleEditFirst() {
         if (toDoID.getSelectionModel().getSelectedIndex() >= 0) {
             int index = toDoID.getSelectionModel().getSelectedIndex();
             editTaskPresenter.show(toDoID.getItems().get(index), index);
-            editTaskPresenter.listChooser = 1;
+            EditTaskPresenter.listChooser = 1;
         }
     }
 
-    public void handleDeleteSecond(ActionEvent actionEvent) {
+    public void handleDeleteSecond() {
         if (inProgressID.getSelectionModel().getSelectedIndex() >= 0) {
             int index = inProgressID.getSelectionModel().getSelectedIndex();
             inProgressID.getItems().remove(index);
         }
     }
 
-    public void handleEditSecond(ActionEvent actionEvent) {
+    public void handleEditSecond() {
         if (inProgressID.getSelectionModel().getSelectedIndex() >= 0) {
             int index = inProgressID.getSelectionModel().getSelectedIndex();
             editTaskPresenter.show(inProgressID.getItems().get(index), index);
-            editTaskPresenter.listChooser = 2;
+            EditTaskPresenter.listChooser = 2;
         }
     }
 
-    public void handleDeleteThird(ActionEvent actionEvent) {
+    public void handleDeleteThird() {
         if (doneID.getSelectionModel().getSelectedIndex() >= 0) {
             int index = doneID.getSelectionModel().getSelectedIndex();
             doneID.getItems().remove(index);
         }
     }
 
-    public void handleEditThird(ActionEvent actionEvent) {
+    public void handleEditThird() {
         if (doneID.getSelectionModel().getSelectedIndex() >= 0) {
             int index = doneID.getSelectionModel().getSelectedIndex();
             editTaskPresenter.show(doneID.getItems().get(index), index);
-            editTaskPresenter.listChooser = 3;
+            EditTaskPresenter.listChooser = 3;
         }
     }
 
@@ -207,12 +284,5 @@ public class GuiControler implements Initializable
         }
     }
 
-    public EditTaskPresenter getEditTaskPresenter() {
-        return editTaskPresenter;
-    }
-
-    public AddTaskPresenter getAddTaskPresenter() {
-        return addTaskPresenter;
-    }
 }
 

@@ -15,7 +15,7 @@
       <file leaf-file-name="DrawerTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application/model/DrawerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
+            <state relative-caret-position="119">
               <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Application/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="86" column="12" lean-forward="true" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+            <state relative-caret-position="306">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,15 +73,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -133,7 +134,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -143,7 +143,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,14 +199,17 @@
       <workItem from="1524085032397" duration="5126000" />
       <workItem from="1524091089854" duration="14242000" />
       <workItem from="1524137695182" duration="100000" />
+      <workItem from="1524152547013" duration="234000" />
+      <workItem from="1524176439697" duration="132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19468000" />
+    <option name="totallyTimeSpent" value="19834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -219,7 +222,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -245,6 +248,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Application/model/DrawerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/model/DrawerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="12" lean-forward="true" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/model/DrawerTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -273,21 +316,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/controller/GraphController.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Double.java" />
     <entry file="file://$PROJECT_DIR$/src/Application/resources/ActualizeViewListener.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/javafx.graphics/javafx/concurrent/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="1079" column="19" selection-start-line="1079" selection-start-column="19" selection-end-line="1079" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/javafx.graphics/javafx/concurrent/Task.java" />
     <entry file="file://$PROJECT_DIR$/src/Application/resources/Data.java" />
     <entry file="file://$PROJECT_DIR$/src/Application/controller/GraphController.java" />
     <entry file="file://$PROJECT_DIR$/src/Application/controller/GraphDrawer.java" />
@@ -321,7 +352,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/model/DrawerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
+        <state relative-caret-position="119">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -331,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="86" column="12" lean-forward="true" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        <state relative-caret-position="306">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -379,7 +410,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

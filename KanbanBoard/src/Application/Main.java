@@ -1,5 +1,6 @@
 package Application;
 
+import Application.Controler.ShutDownThread;
 import Application.Presenter.GuiPresenter;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -16,6 +17,10 @@ public class Main extends Application
     {
         primaryStage.setTitle("Kanban Board");
         GuiPresenter guiPresenter = new GuiPresenter(primaryStage);
+        Runtime.getRuntime().addShutdownHook(new ShutDownThread());
         guiPresenter.init();
     }
+
+
 }
+
