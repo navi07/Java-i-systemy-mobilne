@@ -7,9 +7,12 @@ import Application.Resources.Serializer;
 import Application.Resources.Warning;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -49,7 +52,7 @@ public class GuiControler implements Initializable, Serializable
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Label about = new Label("About");
+        Label about = new Label("Autor");
         about.setOnMouseClicked(event -> AuthorMessage());
 
         AboutID.setGraphic(about);
@@ -62,6 +65,30 @@ public class GuiControler implements Initializable, Serializable
         loadFromFileID.setOnAction(event -> loadFromFile());
         importFromFileID.setOnAction(event -> importFromFile());
         exportToFileID.setOnAction(event -> exportToFile());
+
+        toDoID.setOnMouseClicked(mouseEvent -> {
+            if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
+                if(mouseEvent.getClickCount() == 2){
+                    handleEditFirst();
+                }
+            }
+        });
+
+        inProgressID.setOnMouseClicked(mouseEvent -> {
+            if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
+                if(mouseEvent.getClickCount() == 2){
+                    handleEditSecond();
+                }
+            }
+        });
+
+        doneID.setOnMouseClicked(mouseEvent -> {
+            if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
+                if(mouseEvent.getClickCount() == 2){
+                   handleEditThird();
+                }
+            }
+        });
 
         toDoID.setOnKeyPressed(event -> {
                     switch (event.getCode()) {
@@ -148,7 +175,7 @@ public class GuiControler implements Initializable, Serializable
         Stage FCstage = (Stage) anchorPaneMainID.getScene().getWindow();
         File workingDirectory = new File(System.getProperty("user.dir"));
         fileChooser.setInitialDirectory(workingDirectory);
-        fileChooser.setTitle("Choose file to import data");
+        fileChooser.setTitle("Wybierz plik do wczytania");
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("JSON", "*.json"),
                 new FileChooser.ExtensionFilter("CSV", "*.csv")
@@ -171,7 +198,7 @@ public class GuiControler implements Initializable, Serializable
         Stage FCstage = (Stage) anchorPaneMainID.getScene().getWindow();
         File workingDirectory = new File(System.getProperty("user.dir"));
         fileChooser.setInitialDirectory(workingDirectory);
-        fileChooser.setTitle("Make file to export data");
+        fileChooser.setTitle("Zapisz dane do pliku");
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("JSON", "*.json"),
                 new FileChooser.ExtensionFilter("CSV", "*.csv")

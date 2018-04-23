@@ -15,7 +15,7 @@ public class AddTaskControler {
     public TextField titleID;
     public ComboBox priorityComboBoxID;
     public DatePicker expDateID = new DatePicker(null);
-    private ObservableList < String > priority_list = FXCollections.observableArrayList("Low", "Medium", "High");
+    private ObservableList < String > priority_list = FXCollections.observableArrayList("Mały", "Średni", "Wysoki");
     private Warning warning = new Warning();
 
     public AddTaskControler() {}

@@ -15,7 +15,7 @@ public class EditTaskControler {
     public TextField titleID;
     public ComboBox priorityID;
     public DatePicker expDateID;
-    private ObservableList < String > priority_list = FXCollections.observableArrayList("Low", "Medium", "High");
+    private ObservableList < String > priority_list = FXCollections.observableArrayList("Mały", "Średni", "Wysoki");
     private Warning warning = new Warning();
 
     public EditTaskControler() {}

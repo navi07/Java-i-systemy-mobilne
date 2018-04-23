@@ -12,19 +12,19 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPaneGlobalID" prefHeight="402.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controler.GuiControler">
+<AnchorPane fx:id="anchorPaneGlobalID" prefHeight="424.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controler.GuiControler">
    <children>
-      <AnchorPane fx:id="anchorPaneMainID" layoutX="2.0" prefHeight="424.0" prefWidth="800.0">
+      <AnchorPane fx:id="anchorPaneMainID" prefHeight="424.0" prefWidth="794.0" style="-fx-background-color: powderblue;">
          <children>
             <MenuBar prefHeight="32.0" prefWidth="800.0">
               <menus>
-                <Menu fx:id="fileID" mnemonicParsing="false" text="File">
+                <Menu fx:id="fileID" mnemonicParsing="false" text="Plik">
                   <items>
-                        <MenuItem fx:id="saveToFileID" mnemonicParsing="false" text="Save to file" />
-                        <MenuItem fx:id="loadFromFileID" mnemonicParsing="false" text="Load from file" />
-                        <MenuItem fx:id="exportToFileID" mnemonicParsing="false" text="Export to file" />
-                        <MenuItem fx:id="importFromFileID" mnemonicParsing="false" text="Import from file" />
-                    <MenuItem fx:id="closeID" mnemonicParsing="false" onAction="#handleCloseID" text="Close" />
+                        <MenuItem fx:id="saveToFileID" mnemonicParsing="false" text="Zapisz" />
+                        <MenuItem fx:id="loadFromFileID" mnemonicParsing="false" text="Wczytaj" />
+                        <MenuItem fx:id="exportToFileID" mnemonicParsing="false" text="Zapisz jako " />
+                        <MenuItem fx:id="importFromFileID" mnemonicParsing="false" text="Wczytaj jako " />
+                    <MenuItem fx:id="closeID" mnemonicParsing="false" onAction="#handleCloseID" text="Wyjdź" />
                   </items>
                 </Menu>
                   <Menu fx:id="AboutID" mnemonicParsing="false">
@@ -34,50 +34,50 @@
                   </Menu>
               </menus>
             </MenuBar>
-            <Button fx:id="newTaskButtonID" layoutX="329.0" layoutY="367.0" mnemonicParsing="false" onAction="#handlenewTaskButton" prefHeight="43.0" prefWidth="136.0" text="Add new task">
+            <Button fx:id="newTaskButtonID" layoutX="329.0" layoutY="367.0" mnemonicParsing="false" onAction="#handlenewTaskButton" prefHeight="43.0" prefWidth="136.0" text="Dodaj nowy wpis">
                <effect>
                   <Blend />
                </effect></Button>
-            <ListView fx:id="toDoID" layoutX="14.0" layoutY="87.0" prefHeight="273.0" prefWidth="210.0">
+            <ListView fx:id="toDoID" layoutX="14.0" layoutY="87.0" prefHeight="273.0" prefWidth="210.0" style="-fx-background-color: snow;">
                <contextMenu>
                   <ContextMenu>
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#handleDeleteFirst" text="Delete" />
-                        <MenuItem mnemonicParsing="false" onAction="#handleEditFirst" text="Edit" />
+                      <MenuItem mnemonicParsing="false" onAction="#handleDeleteFirst" text="Usuń" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleEditFirst" text="Edytuj" />
                     </items>
                   </ContextMenu>
                </contextMenu></ListView>
-            <Label layoutX="96.0" layoutY="57.0" text="TO DO" textFill="#000000cc">
+            <Label layoutX="66.0" layoutY="57.0" text="DO ZROBIENIA" textFill="#000000cc">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font></Label>
-            <ListView fx:id="inProgressID" layoutX="292.0" layoutY="87.0" prefHeight="273.0" prefWidth="210.0">
+            <ListView fx:id="inProgressID" layoutX="292.0" layoutY="87.0" prefHeight="273.0" prefWidth="210.0" style="-fx-background-color: snow;">
                <contextMenu>
                   <ContextMenu>
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#handleDeleteSecond" text="Delete" />
-                        <MenuItem mnemonicParsing="false" onAction="#handleEditSecond" text="Edit" />
+                      <MenuItem mnemonicParsing="false" onAction="#handleDeleteSecond" text="Usuń" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleEditSecond" text="Edytuj" />
                     </items>
                   </ContextMenu>
                </contextMenu></ListView>
-            <ListView fx:id="doneID" layoutX="570.0" layoutY="87.0" prefHeight="273.0" prefWidth="210.0">
+            <ListView fx:id="doneID" layoutX="570.0" layoutY="87.0" prefHeight="273.0" prefWidth="210.0" style="-fx-background-color: snow;">
                <contextMenu>
                   <ContextMenu>
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#handleDeleteThird" text="Delete" />
-                        <MenuItem mnemonicParsing="false" onAction="#handleEditThird" text="Edit" />
+                      <MenuItem mnemonicParsing="false" onAction="#handleDeleteThird" text="Usuń" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleEditThird" text="Edytuj" />
                     </items>
                   </ContextMenu>
                </contextMenu></ListView>
-            <Label layoutX="352.0" layoutY="57.0" text="IN PROGRESS" textFill="#000000cc">
+            <Label layoutX="359.0" layoutY="59.0" text="W TRAKCIE" textFill="#000000cc">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font></Label>
-            <Label layoutX="654.0" layoutY="57.0" text="DONE" textFill="#000000cc">
+            <Label layoutX="629.0" layoutY="57.0" text="SKOŃCZONE" textFill="#000000cc">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font></Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="35.0" layoutX="15.0" layoutY="52.0" stroke="#00000099" strokeType="INSIDE" width="210.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="35.0" layoutX="14.0" layoutY="52.0" stroke="#00000099" strokeType="INSIDE" width="210.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="35.0" layoutX="292.0" layoutY="52.0" stroke="#00000099" strokeType="INSIDE" width="210.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="35.0" layoutX="570.0" layoutY="52.0" stroke="#00000099" strokeType="INSIDE" width="210.0" />
          </children></AnchorPane>

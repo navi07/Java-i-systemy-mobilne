@@ -17,12 +17,12 @@ public class Container implements Serializable {
         this.priority = priority;
         date = LocalDate.of(y, m, d);
 
-        if(priority.equals("Low"))
+        if(priority.equals("Mały"))
             priorityColor ="green";
-        else if(priority.equals("Medium"))
+        else if(priority.equals("Średni"))
             priorityColor ="yellow";
-        else if(priority.equals("High"))
-            priorityColor ="orange";
+        else if(priority.equals("Wysoki"))
+            priorityColor ="red";
     }
 
     @Override

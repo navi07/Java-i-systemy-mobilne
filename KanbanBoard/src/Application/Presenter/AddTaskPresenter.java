@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -35,7 +36,7 @@ public class AddTaskPresenter {
 
             // add layout to a scene and show them all
             Scene scene = new Scene(rootLayout);
-            primaryStage.setTitle("Add new task");
+            primaryStage.setTitle("Dodaj wpis");
             primaryStage.setScene(scene);
             primaryStage.setMaximized(false);
             primaryStage.show();
