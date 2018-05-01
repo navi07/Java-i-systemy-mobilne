@@ -30,5 +30,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="gson-2.8.2" level="project" />
+    <orderEntry type="library" name="commons-csv-1.5" level="project" />
   </component>
 </module>

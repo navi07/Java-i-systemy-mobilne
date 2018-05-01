@@ -1,12 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="javafx" name="KanbanBoard">
-    <output-path>$PROJECT_DIR$/out/artifacts/KanbanBoard</output-path>
+    <output-path />
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="Application.Main" />
         <option name="description" value="" />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="ToDoList" />
+        <option name="title" value="Kanban Board" />
         <option name="vendor" value="" />
         <option name="version" value="" />
       </options>

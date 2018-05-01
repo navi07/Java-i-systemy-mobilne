@@ -10,11 +10,13 @@ public class Container implements Serializable {
     private LocalDate date = LocalDate.now();
     private String priority;
     private String priorityColor;
+    private Type type;
 
     public Container(String title, String description, String priority, int y, int m, int d) {
         this.title = title;
         this.description = description;
         this.priority = priority;
+        this.type = Type.toDo;
         date = LocalDate.of(y, m, d);
 
         if(priority.equals("Mały"))
@@ -27,7 +29,13 @@ public class Container implements Serializable {
 
     @Override
     public String toString() {
-        return title;
+        return  (title + ", " +
+                description + ", " +
+                priority + ", " +
+                date.getYear() + ", " +
+                date.getMonthValue() + ", " +
+                date.getDayOfMonth() + ", " +
+                type);
     }
 
     public String getPriorityColor() {
@@ -50,4 +58,22 @@ public class Container implements Serializable {
         return priority;
     }
 
+    public int getYear() {
+        return date.getYear();
+    }
+
+    public int getMonth(){
+        return date.getMonthValue();
+    }
+
+    public int getDay(){
+        return date.getDayOfMonth();
+    }
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public Type getType() {
+        return type;
+    }
 }

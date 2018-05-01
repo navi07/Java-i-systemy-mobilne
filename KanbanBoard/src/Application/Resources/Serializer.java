@@ -8,5 +8,4 @@ public class Serializer implements Serializable {
     public ArrayList<Container> inProgress;
     public ArrayList<Container> done;
 
-
 }

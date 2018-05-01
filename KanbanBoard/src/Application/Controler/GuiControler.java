@@ -4,15 +4,14 @@ import Application.Presenter.AddTaskPresenter;
 import Application.Presenter.EditTaskPresenter;
 import Application.Resources.Container;
 import Application.Resources.Serializer;
+import Application.Resources.Type;
 import Application.Resources.Warning;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -20,8 +19,15 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import java.io.*;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import com.google.gson.Gson;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVPrinter;
+import org.apache.commons.csv.CSVRecord;
 
 public class GuiControler implements Initializable, Serializable
 {
@@ -96,6 +102,7 @@ public class GuiControler implements Initializable, Serializable
                             if (!toDoID.getItems().isEmpty()) {
                                 inProgressID.getItems().add(toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()));
                                 toDoID.getItems().remove(toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()));
+                                inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()).setType(Type.inProgress);
                             }
                             break;
                     }
@@ -108,12 +115,14 @@ public class GuiControler implements Initializable, Serializable
                     if (!inProgressID.getItems().isEmpty()) {
                         doneID.getItems().add(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
                         inProgressID.getItems().remove(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
+                        doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()).setType(Type.done);
                     }
                     break;
                 case LEFT:
                     if (!inProgressID.getItems().isEmpty()) {
                         toDoID.getItems().add(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
                         inProgressID.getItems().remove(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
+                        toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()).setType(Type.toDo);
                     }
                     break;
             }
@@ -125,6 +134,7 @@ public class GuiControler implements Initializable, Serializable
                     if (!doneID.getItems().isEmpty()) {
                         inProgressID.getItems().add(doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()));
                         doneID.getItems().remove(doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()));
+                        inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()).setType(Type.inProgress);
                     }
                     break;
             }
@@ -133,6 +143,107 @@ public class GuiControler implements Initializable, Serializable
         toDoID.setCellFactory(list -> new ColorRectCell());
         inProgressID.setCellFactory(list -> new ColorRectCell());
         doneID.setCellFactory(list -> new ColorRectCell());
+    }
+
+    private void generateCSV(File file){
+        try (
+                BufferedWriter writer = Files.newBufferedWriter(Paths.get(file.getAbsolutePath()));
+
+                CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
+                        .withHeader("Title", "Description", "Priority", "Y", "M", "D", "Type"));
+        ) {
+
+
+            for (int i = 0; i < serializer.toDO.size(); i++){
+                csvPrinter.printRecord(serializer.toDO.get(i).getTitle(),
+                        serializer.toDO.get(i).getDescription(),
+                        serializer.toDO.get(i).getPriority(),
+                        serializer.toDO.get(i).getYear(),
+                        serializer.toDO.get(i).getMonth(),
+                        serializer.toDO.get(i).getDay(),
+                        serializer.toDO.get(i).getType());
+            }
+
+            for (int i = 0; i < serializer.inProgress.size(); i++){
+                csvPrinter.printRecord(serializer.inProgress.get(i).getTitle(),
+                        serializer.inProgress.get(i).getDescription(),
+                        serializer.inProgress.get(i).getPriority(),
+                        serializer.inProgress.get(i).getYear(),
+                        serializer.inProgress.get(i).getMonth(),
+                        serializer.inProgress.get(i).getDay(),
+                        serializer.inProgress.get(i).getType());
+            }
+
+            for (int i = 0; i < serializer.done.size(); i++){
+                csvPrinter.printRecord(serializer.done.get(i).getTitle(),
+                        serializer.done.get(i).getDescription(),
+                        serializer.done.get(i).getPriority(),
+                        serializer.done.get(i).getYear(),
+                        serializer.done.get(i).getMonth(),
+                        serializer.done.get(i).getDay(),
+                        serializer.done.get(i).getType());
+            }
+
+            csvPrinter.flush();
+        } catch (IOException e){
+            warning.showSaveErrorAlert();
+    }
+
+    }
+
+    private void generateJSON(File file){
+        Gson gson = new Gson();
+
+        try(FileWriter writer = new FileWriter(file.getAbsolutePath())){
+            gson.toJson(serializer, writer);
+        } catch (IOException e) {
+            warning.showSaveErrorAlert();
+        }
+    }
+
+    private void loadJSON(Reader reader){
+        Gson gson = new Gson();
+        serializer =  gson.fromJson(reader, Serializer.class);
+    }
+
+    private void loadCSV(File file) {
+
+        try (
+                Reader reader = Files.newBufferedReader(Paths.get(file.getAbsolutePath()));
+                CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
+                        .withFirstRecordAsHeader()
+                        .withIgnoreHeaderCase()
+                        .withTrim());
+        ) {
+            serializer.toDO.clear();
+            serializer.inProgress.clear();
+            serializer.done.clear();
+
+            for (CSVRecord csvRecord : csvParser) {
+                String title = csvRecord.get("Title");
+                String description = csvRecord.get("Description");
+                String priority = csvRecord.get("Priority");
+                int y = Integer.parseInt(csvRecord.get("Y"));
+                int m = Integer.parseInt(csvRecord.get("M"));
+                int d = Integer.parseInt(csvRecord.get("D"));
+                String type = csvRecord.get("Type");
+
+                switch (type) {
+                    case "toDo":
+                        serializer.toDO.add(new Container(title, description, priority, y, m, d));
+                        break;
+                    case "inProgress":
+                        serializer.inProgress.add(new Container(title, description, priority, y, m, d));
+                        break;
+                    case "done":
+                        serializer.done.add(new Container(title, description, priority, y, m, d));
+                        break;
+                }
+
+            }
+        } catch (IOException e){
+            warning.showLoadErrorAlert();
+         }
     }
 
     private void deserializeData(ObjectInputStream inputStream) throws IOException, ClassNotFoundException {
@@ -183,11 +294,25 @@ public class GuiControler implements Initializable, Serializable
         File file = fileChooser.showOpenDialog(FCstage);
 
         if (file != null) {
-            try(ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(file.getAbsolutePath()))){
-                deserializeData(inputStream);
+            try(Reader reader = new FileReader(file.getAbsolutePath())){
+                switch (fileChooser.getSelectedExtensionFilter().getDescription()){
+                    case "JSON" :
+                        loadJSON(reader);
+                        break;
+                    case "CSV" :
+                        loadCSV(file);
+                        break;
+                }
+
+                toDoList = FXCollections.observableArrayList(serializer.toDO);
+                toDoID.setItems(toDoList);
+                inProgressList = FXCollections.observableArrayList(serializer.inProgress);
+                inProgressID.setItems(inProgressList);
+                doneList = FXCollections.observableArrayList(serializer.done);
+                doneID.setItems(doneList);
             } catch (FileNotFoundException | NullPointerException e){
                 warning.showFileNotFoundAlert();
-            } catch (IOException | ClassNotFoundException e) {
+            } catch (IOException e) {
                 warning.showLoadErrorAlert();
             }
         }
@@ -210,10 +335,13 @@ public class GuiControler implements Initializable, Serializable
             serializer.inProgress = new ArrayList<>(inProgressList);
             serializer.done = new ArrayList<>(doneList);
 
-            try(ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(file.getAbsolutePath()))){
-                outputStream.writeObject(serializer);
-            } catch (IOException e) {
-                warning.showSaveErrorAlert();
+            switch (fileChooser.getSelectedExtensionFilter().getDescription()){
+                case "JSON" :
+                    generateJSON(file);
+                    break;
+                case "CSV" :
+                    generateCSV(file);
+                    break;
             }
         }
     }
