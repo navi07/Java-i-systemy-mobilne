@@ -16,7 +16,21 @@ public class Container implements Serializable {
         this.title = title;
         this.description = description;
         this.priority = priority;
-        this.type = Type.toDo;
+        date = LocalDate.of(y, m, d);
+
+        if(priority.equals("Mały"))
+            priorityColor ="green";
+        else if(priority.equals("Średni"))
+            priorityColor ="yellow";
+        else if(priority.equals("Wysoki"))
+            priorityColor ="red";
+    }
+
+    public Container(String title, String description, String priority, int y, int m, int d, Type type) {
+        this.title = title;
+        this.description = description;
+        this.priority = priority;
+        this.type = type;
         date = LocalDate.of(y, m, d);
 
         if(priority.equals("Mały"))

@@ -230,13 +230,13 @@ public class GuiControler implements Initializable, Serializable
 
                 switch (type) {
                     case "toDo":
-                        serializer.toDO.add(new Container(title, description, priority, y, m, d));
+                        serializer.toDO.add(new Container(title, description, priority, y, m, d, Type.toDo));
                         break;
                     case "inProgress":
-                        serializer.inProgress.add(new Container(title, description, priority, y, m, d));
+                        serializer.inProgress.add(new Container(title, description, priority, y, m, d, Type.inProgress));
                         break;
                     case "done":
-                        serializer.done.add(new Container(title, description, priority, y, m, d));
+                        serializer.done.add(new Container(title, description, priority, y, m, d, Type.done));
                         break;
                 }
 

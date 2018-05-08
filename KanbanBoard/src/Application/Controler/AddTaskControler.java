@@ -3,6 +3,7 @@ package Application.Controler;
 
 import Application.Presenter.AddTaskPresenter;
 import Application.Resources.Container;
+import Application.Resources.Type;
 import Application.Resources.Warning;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -40,7 +41,7 @@ public class AddTaskControler {
                     String priority = (String) priorityComboBoxID.getValue();
                     String description = descriptionID.getText();
 
-                    AddTaskPresenter.add(new Container(title, description, priority, y, m, d));
+                    AddTaskPresenter.add(new Container(title, description, priority, y, m, d, Type.toDo));
                     AddTaskPresenter.closeStage();
                 }
 
