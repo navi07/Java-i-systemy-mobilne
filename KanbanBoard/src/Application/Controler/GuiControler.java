@@ -101,8 +101,8 @@ public class GuiControler implements Initializable, Serializable
                         case RIGHT:
                             if (!toDoID.getItems().isEmpty()) {
                                 inProgressID.getItems().add(toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()));
+                                toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()).setType(Type.inProgress);
                                 toDoID.getItems().remove(toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()));
-                                inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()).setType(Type.inProgress);
                             }
                             break;
                     }
@@ -114,15 +114,15 @@ public class GuiControler implements Initializable, Serializable
                 case RIGHT:
                     if (!inProgressID.getItems().isEmpty()) {
                         doneID.getItems().add(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
+                        inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()).setType(Type.done);
                         inProgressID.getItems().remove(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
-                        doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()).setType(Type.done);
                     }
                     break;
                 case LEFT:
                     if (!inProgressID.getItems().isEmpty()) {
                         toDoID.getItems().add(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
+                        inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()).setType(Type.toDo);
                         inProgressID.getItems().remove(inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()));
-                        toDoID.getItems().get(toDoID.getFocusModel().getFocusedIndex()).setType(Type.toDo);
                     }
                     break;
             }
@@ -133,8 +133,8 @@ public class GuiControler implements Initializable, Serializable
                 case LEFT:
                     if (!doneID.getItems().isEmpty()) {
                         inProgressID.getItems().add(doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()));
+                        doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()).setType(Type.inProgress);
                         doneID.getItems().remove(doneID.getItems().get(doneID.getFocusModel().getFocusedIndex()));
-                        inProgressID.getItems().get(inProgressID.getFocusModel().getFocusedIndex()).setType(Type.inProgress);
                     }
                     break;
             }
