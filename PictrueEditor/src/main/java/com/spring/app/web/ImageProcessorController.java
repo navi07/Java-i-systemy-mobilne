@@ -17,11 +17,11 @@ import java.util.Map;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
 class notFoundExp extends RuntimeException {
-    public notFoundExp(String exception) {
+    notFoundExp(String exception) {
         super(exception);
     }}
 
-public class ImageProcessorController  {
+class ImageProcessorController  {
 
     private Map<Integer,BufferedImage> map = new HashMap<>();
     private int counter = 0;
