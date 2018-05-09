@@ -282,6 +282,10 @@ public class GuiControler implements Initializable, Serializable
     }
 
     private void importFromFile(){
+        serializer.toDO = new ArrayList<>(toDoList);
+        serializer.inProgress = new ArrayList<>(inProgressList);
+        serializer.done = new ArrayList<>(doneList);
+
         FileChooser fileChooser = new FileChooser();
         Stage FCstage = (Stage) anchorPaneMainID.getScene().getWindow();
         File workingDirectory = new File(System.getProperty("user.dir"));
