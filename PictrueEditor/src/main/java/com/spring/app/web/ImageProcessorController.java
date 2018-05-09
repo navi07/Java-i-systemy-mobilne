@@ -42,15 +42,15 @@ class ImageProcessorController  {
         if(!map.containsKey(id) || map.get(id) == null) {
             throw new notFoundExp("Image not found !");
         }
-
-        map.put(id, null);
+        
+        map.remove(id);
     }
 
     JSONObject getImageSize(int id) throws notFoundExp, JSONException {
         if(!map.containsKey(id) || map.get(id) == null)
             throw new notFoundExp("Image not found !");
-        JSONObject sizeData = new JSONObject();
 
+        JSONObject sizeData = new JSONObject();
         sizeData.put("Width", map.get(id).getWidth());
         sizeData.put("Height", map.get(id).getHeight());
 
@@ -83,7 +83,7 @@ class ImageProcessorController  {
         return histrogramData;
     }
 
-    byte[] getSubImage(int id, int x, int y, int w, int h) throws IOException{
+    byte[] getCutImage(int id, int x, int y, int w, int h) throws IOException{
         if(!map.containsKey(id) || map.get(id) == null) {
             throw new notFoundExp("Image not found !");
         }

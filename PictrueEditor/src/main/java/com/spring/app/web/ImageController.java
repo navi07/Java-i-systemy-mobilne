@@ -40,6 +40,6 @@ public class ImageController {
             produces = MediaType.IMAGE_PNG_VALUE)
     public byte[] getGrayImage(@PathVariable int id, @PathVariable int x,@PathVariable int y,
                                @PathVariable int w, @PathVariable int h) throws Exception {
-        return imageProcessorController.getSubImage(id,x,y,w,h);
+        return imageProcessorController.getCutImage(id,x,y,w,h);
     }
 }
