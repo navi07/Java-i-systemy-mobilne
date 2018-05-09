@@ -21,7 +21,7 @@ class notFoundExp extends RuntimeException {
         super(exception);
     }}
 
-public class ImageProcessorController {
+public class ImageProcessorController  {
 
     private Map<Integer,BufferedImage> map = new HashMap<>();
     private int counter = 0;
@@ -30,7 +30,7 @@ public class ImageProcessorController {
         InputStream imageStream = new BufferedInputStream(inputStream);
         BufferedImage bufferedImage = ImageIO.read(imageStream);
         BufferedImage bufferedImage1 = new BufferedImage(bufferedImage.getWidth(),
-                bufferedImage.getHeight(), BufferedImage.TYPE_BYTE_BINARY);
+                bufferedImage.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
         bufferedImage1.createGraphics().drawImage(bufferedImage, 0, 0, null);
 
         map.put(counter,bufferedImage1);
