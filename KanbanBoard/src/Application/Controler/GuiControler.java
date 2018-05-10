@@ -156,7 +156,7 @@ public class GuiControler implements Initializable, Serializable
 
             for (int i = 0; i < serializer.toDO.size(); i++){
                 csvPrinter.printRecord(serializer.toDO.get(i).getTitle(),
-                        serializer.toDO.get(i).getDescription(),
+                        serializer.toDO.get(i).getDescription().replace("\n", " "),
                         serializer.toDO.get(i).getPriority(),
                         serializer.toDO.get(i).getYear(),
                         serializer.toDO.get(i).getMonth(),
@@ -166,7 +166,7 @@ public class GuiControler implements Initializable, Serializable
 
             for (int i = 0; i < serializer.inProgress.size(); i++){
                 csvPrinter.printRecord(serializer.inProgress.get(i).getTitle(),
-                        serializer.inProgress.get(i).getDescription(),
+                        serializer.inProgress.get(i).getDescription().replace("\n", " "),
                         serializer.inProgress.get(i).getPriority(),
                         serializer.inProgress.get(i).getYear(),
                         serializer.inProgress.get(i).getMonth(),
@@ -175,7 +175,7 @@ public class GuiControler implements Initializable, Serializable
             }
 
             for (int i = 0; i < serializer.done.size(); i++){
-                csvPrinter.printRecord(serializer.done.get(i).getTitle(),
+                csvPrinter.printRecord(serializer.done.get(i).getTitle().replace("\n", " "),
                         serializer.done.get(i).getDescription(),
                         serializer.done.get(i).getPriority(),
                         serializer.done.get(i).getYear(),

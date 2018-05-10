@@ -1,6 +1,7 @@
 Title,Description,Priority,Y,M,D,Type
 Pierwszy,1,Mały,2018,5,1,toDo
 7dmy,,Średni,2018,5,18,toDo
+9,"   xD",Mały,2018,5,10,toDo
 Drugi,2,Średni,2018,5,2,inProgress
 Piaty,desc,Średni,2018,5,9,inProgress
 8,,Wysoki,2018,5,10,inProgress
